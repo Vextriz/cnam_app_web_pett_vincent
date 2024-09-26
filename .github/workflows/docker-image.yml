@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: emmamau/cnamApp
+  IMAGE_NAME: Vextriz/cnam_app_web_pett_vincent
 
 jobs:
   build-and-publish:

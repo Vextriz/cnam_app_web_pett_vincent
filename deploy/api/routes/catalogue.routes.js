@@ -1,13 +1,14 @@
-const { checkJwt}  = require('./jwtMiddleware');
+const { checkJwt } = require('./jwtMiddleware.js');
+const express = require("express");
+const catalogue = require("../controllers/catalogue.controllers.js");
 
-module.exports = app => {
-    const catalogue = require("../controllers/catalogue.controllers.js");
-  
-    var router = require("express").Router();
-  
+module.exports = (app) => {
+  const router = express.Router();
 
-   
-    router.get("/", checkJwt,catalogue.get);
-  
-    app.use('/api/catalogue', router);
-  };
+  // Définition des routes
+  router.post('/insert', catalogue.insertCatalogue);
+  router.get("/", checkJwt, catalogue.get);
+
+  // Utilisation des routes dans l'application
+  app.use('/api/catalogue', router);
+};

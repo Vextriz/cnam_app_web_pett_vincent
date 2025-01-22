@@ -6,7 +6,7 @@ module.exports = {
     // Get the JWT from the request header.
     const token = req.headers['authorization'];
     let jwtPayload;
-  
+
     // Validate the token and retrieve its data.
     try {
         // Verify the payload fields
@@ -30,7 +30,7 @@ module.exports = {
             .send(JSON.stringify({ message: 'Missing or invalid token' }));
         return;
     }
-  
+
     // Pass programmatic flow to the next middleware/controller.
     next();
   }

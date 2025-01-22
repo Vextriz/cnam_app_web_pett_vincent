@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/user/delete-user/delete-user.component.css"],
-  "sourcesContent": [".container {\r\n  max-width: 500px;\r\n  margin: 0 auto;\r\n}\r\n\r\nh1 {\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.delete-user-form .form-group {\r\n  margin-bottom: 15px;\r\n}\r\n\r\nbutton {\r\n  width: 100%;\r\n}\r\n"],
-  "mappings": ";AAAA,CAAC;AACC,aAAW;AACX,UAAQ,EAAE;AACZ;AAEA;AACE,cAAY;AACZ,iBAAe;AACjB;AAEA,CAAC,iBAAiB,CAAC;AACjB,iBAAe;AACjB;AAEA;AACE,SAAO;AACT;",
-  "names": []
-}
